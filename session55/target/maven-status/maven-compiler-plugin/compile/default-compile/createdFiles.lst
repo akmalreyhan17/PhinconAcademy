@@ -1,0 +1,9 @@
+com\example\session23\service\AnimalServiceImpl.class
+com\example\session23\repository\AnimalRepository.class
+com\example\session23\service\MyService.class
+com\example\session23\model\Animal.class
+com\example\session23\service\AnimalService.class
+com\example\session23\Session23Application.class
+com\example\session23\repository\MyRepository.class
+com\example\session23\service\OtherService.class
+com\example\session23\configuration\ItemProperties.class
