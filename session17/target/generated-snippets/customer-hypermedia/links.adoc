@@ -1,0 +1,10 @@
+|===
+|Relation|Description
+
+|`+self+`
+|Get this customer
+
+|`+next-customer+`
+|Get the next customer
+
+|===

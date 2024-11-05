@@ -1,0 +1,7 @@
+com\example\session16\Session16Application.class
+com\example\session16\model\CustomerResource.class
+com\example\session16\service\CustomerServiceImpl.class
+com\example\session16\controller\CustomerController.class
+com\example\session16\repository\CustomerRepository.class
+com\example\session16\model\Customer.class
+com\example\session16\service\CustomerService.class

@@ -1,0 +1,14 @@
+[source,http,options="nowrap"]
+----
+POST /api/customer HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Content-Length: 70
+Host: localhost:8080
+
+{
+  "id" : 1,
+  "name" : "Burhan",
+  "email" : "burhan@mail.com"
+}
+----

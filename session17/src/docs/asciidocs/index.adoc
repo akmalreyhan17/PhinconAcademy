@@ -1,0 +1,34 @@
+= RESTful Customer API Specification
+;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+[[Index]]
+= Index
+
+This is the index for the Customer Rest API endpoint.
+
+[[index-post-customer]]
+== Insert new customer
+
+A 'POST' request to add a new customer to database
+
+operation::customer-add[snippets='http-request,http-response,request-body,response-body,response-headers']
+
+[[index-find-customer-by-id]]
+== Find a customer by id
+
+A `GET` request is used to find a new person by id
+
+operation::customer-get-by-id[snippets='http-request,http-response']
+
+[[index-find-customer-by-id-negative]]
+== Negative find a customer by id
+
+A `GET` request is used to find a new person by id, but there are no such person found in the record
+
+operation::customer-get-by-id-null[snippets='http-request,http-response']

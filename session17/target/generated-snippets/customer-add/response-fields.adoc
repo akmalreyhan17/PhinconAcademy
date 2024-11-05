@@ -1,0 +1,16 @@
+|===
+|Path|Type|Description
+
+|`+id+`
+|`+Number+`
+|Customer Id
+
+|`+name+`
+|`+String+`
+|Customer's name
+
+|`+email+`
+|`+String+`
+|Customer's email
+
+|===

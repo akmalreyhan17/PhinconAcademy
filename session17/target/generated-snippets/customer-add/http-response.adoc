@@ -1,0 +1,13 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+SignedIn: False
+Content-Type: application/json
+Content-Length: 70
+
+{
+  "id" : 1,
+  "name" : "Burhan",
+  "email" : "burhan@mail.com"
+}
+----

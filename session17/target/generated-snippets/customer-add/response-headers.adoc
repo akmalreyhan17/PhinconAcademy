@@ -1,0 +1,7 @@
+|===
+|Name|Description
+
+|`+SignedIn+`
+|Is user signed in or not
+
+|===

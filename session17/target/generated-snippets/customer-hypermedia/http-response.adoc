@@ -1,0 +1,22 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 297
+
+{
+  "customer" : {
+    "id" : 1,
+    "name" : "Burhan",
+    "email" : "burhan@mail.com"
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/api/customer/repo/1"
+    },
+    "next-customer" : {
+      "href" : "http://localhost:8080/api/customer/repo/2"
+    }
+  }
+}
+----

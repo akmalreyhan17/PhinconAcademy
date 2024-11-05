@@ -1,0 +1,18 @@
+[source,json,options="nowrap"]
+----
+{
+  "customer" : {
+    "id" : 1,
+    "name" : "Burhan",
+    "email" : "burhan@mail.com"
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/api/customer/repo/1"
+    },
+    "next-customer" : {
+      "href" : "http://localhost:8080/api/customer/repo/2"
+    }
+  }
+}
+----

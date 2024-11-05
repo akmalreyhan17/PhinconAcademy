@@ -1,0 +1,10 @@
+[source,bash]
+----
+$ echo '{
+  "id" : 1,
+  "name" : "Burhan",
+  "email" : "burhan@mail.com"
+}' | http POST 'http://localhost:8080/api/customer' \
+    'Content-Type:application/json' \
+    'Accept:application/json'
+----
