@@ -1,0 +1,13 @@
+id: 1
+name: John Doe
+birthdate: 05-05-1995
+phone:
+  - number: 081234567890
+  - number: 081223334444
+address:
+  - street: Jl. Cabe
+    city: Los Angeles
+  - street: Jl. Bawang
+    city: New York
+active: true
+
