@@ -1,0 +1,67 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://example.com/countries"
+    xmlns:tns="http://example.com/countries"
+    elementFormDefault="qualified">
+
+    <xs:complexType name="country">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="population" type="xs:int"/>
+            <xs:element name="capital" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="getCountryRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCountryResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="tns:country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- <xs:complexType name="CountryRequestType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="population" type="xs:int" />
+            <xs:element name="capital" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType> -->
+
+    <!-- <xs:simpleType name="ZipCode">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{5}(-\d{4})?" />
+        </xs:restriction>
+    </xs:simpleType> -->
+
+    <!-- <xs:simpleType name="OrderStatus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Pending" />
+            <xs:enumeration value="Processing" />
+            <xs:enumeration value="Completed" />
+            <xs:enumeration value="Cancelled" />
+        </xs:restriction>
+    </xs:simpleType> -->
+
+    <!-- <xs:simpleType name="IntegerList">
+        <xs:list itemType="xs:integer" />
+    </xs:simpleType> -->
+
+    <!--list: 10 11 12 13 14 -->
+
+    <!-- <xs:complexType name="ProductListResponse">
+        <xs:sequence>
+            <xs:element name="product" type="xs:string" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType> -->
+
+    <!--list: product1, product2, product3  -->
+
+</xs:schema>

@@ -1,0 +1,46 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             targetNamespace="http://example.com/countries"
+             name="CountriesService">
+    
+    <types>
+        <xs:schema targetNamespace="http://example.com/countries">
+            <!-- XML schema definitions -->
+        </xs:schema>
+    </types>
+    
+    <message name="GetCountryRequest">
+        <part name="name" type="xs:string"/>
+    </message>
+    
+    <message name="GetCountryResponse">
+        <part name="country" type="xs:string"/>
+    </message>
+    
+    <portType name="CountriesPortType">
+        <operation name="GetCountry">
+            <input message="tns:GetCountryRequest"/>
+            <output message="tns:GetCountryResponse"/>
+        </operation>
+    </portType>
+    
+    <binding name="CountriesSoapBinding" type="tns:CountriesPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="GetCountry">
+            <soap:operation soapAction="http://example.com/GetCountry"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    
+    <service name="CountriesService">
+        <port name="CountriesPort" binding="tns:CountriesSoapBinding">
+            <soap:address location="http://localhost:8080/ws/countries"/>
+        </port>
+    </service>
+</definitions>
