@@ -1,0 +1,22 @@
+/webapp
+    ├── /WEB-INF
+    │     ├── /classes   -> Compiled .class files (from /src/main/java in a Maven project)
+    │     ├── /lib       -> Third-party JAR files
+    │     ├── web.xml    -> The deployment descriptor (configuration file for the servlet container)
+    ├── /META-INF        -> Metadata about the application (MANIFEST.MF)
+    ├── /static          -> Static files (HTML, CSS, JS)
+    ├── /resources       -> Application resources (e.g., images, text files)
+    ├── /views           -> JSP, Thymeleaf, or other view templates
+    └── index.html       -> The main entry point of the web application
+
+/src
+    ├── /main
+    │   ├── /java              -> Your Java code (controllers, services, etc.)
+    │   ├── /resources
+    │   │   ├── /static         -> Static files (CSS, JavaScript, images)
+    │   │   ├── /templates      -> Thymeleaf templates or other view templates
+    │   │   ├── application.properties
+    │   ├── /webapp
+    │       ├── /WEB-INF
+    │       │   ├── web.xml     -> Deployment descriptor (optional for Spring Boot)
+    │       │   ├── /views      -> JSP files (if using JSP)
