@@ -1,0 +1,4 @@
+public List withErasure(List list) {
+    return list.stream().collect(Collectors.toList());
+}
+
